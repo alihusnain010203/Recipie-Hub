@@ -1,0 +1,237 @@
+*{
+  margin: 0;
+  padding: 0;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Navbar */
+.Navbar{
+  background-color: white;
+  height: 9vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.Links{
+  display: flex;
+  height: 9vh;
+  width: 40vw;
+  align-items: center;
+  justify-content: center;
+}
+.Link{
+  border-radius: 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  height: 7vh;
+  width: 10vw;
+  font-size: large;
+  color: blue;
+  text-decoration: none;
+}
+.Link:hover{
+  background-color: blue;
+  color: white;
+}
+/* Section 1 CSS */
+.section-1 , .section-2 ,.section-3{
+ 
+  border: 1px solid white;
+  border-radius: 20px;
+  background:blue;
+}
+.section-1{
+  height: 90vh;
+}
+.Content-section{z-index: -1;
+  font-size: 3vw;
+  color: white;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
+}
+.heading-holder{
+  height: 15vh;
+}
+.slide-holder{
+  display: flex;
+  flex-direction: row;
+}
+.carousel {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 4px white;
+  width: 50vw;
+  /* height: 100px; */
+  overflow: hidden;
+}
+
+.carousel-item { 
+  font-size: 15vh;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+/* Meal page */
+.section-2{
+  font-size: 2vw;
+  background-color:blue ;
+   height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.cards-meal{
+  width: 100vw;
+  display: flex; 
+   justify-content: space-evenly;
+  align-items: center;
+}
+.btn{
+  height: 35px;
+  width: 100px;
+  border: 2px solid white;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+.btn:hover{
+background-color: blue;
+color: white;
+height: 40px;
+}
+.card-meal {
+  position: relative;
+  width: 25vw;
+  height: 33vh;
+  border: 2px solid white;
+  border-radius: 20px;
+  filter: drop-shadow(2px 2px black);
+  /* box-shadow: 0px 1px 13px rgba(0,0,0,0.1); */
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+}
+.card-meal .img{
+  font-size: 6vh;
+}
+
+.card-meal .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3vh;
+  font-weight: 400;
+  color: #000;
+}
+
+.card-meal .price {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2vh;
+  position: absolute;
+  left: 0.625em;
+  bottom: 0.625em;
+  color: #000;
+}
+
+.card-meal:hover {
+  filter: drop-shadow(3px 3px white);
+background-color: lightblue;
+}
+
+.text {
+  max-width: 55px;
+}
+
+/* Galerry */
+.section-3
+{
+  
+  color: white;
+  font-size: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Gallery{
+  height: fit-content;
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}.Image{
+  height: fit-content;
+}
+.Image:hover{
+  border: 2px solid lightblue;
+ filter: drop-shadow(2px 2px 2px white);
+}
+
+/* Media Queries  */
+@media screen and (max-width:800px){
+  .cards-meal{
+    /* height: 75vh; */
+    flex-direction: column;
+   justify-content: space-between;
+  }
+  .card-meal{
+    flex-direction: column;
+    width: 50vw;
+    height:14vh; 
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+.button{
+  height: 5vh;
+  width: 10vw;
+background-color: white;
+color: blue;
+}
+.button:hover{
+  background-color: blue;
+  color: white;
+}
+@media screen and (max-width:650px){
+  .Links{
+    width: 60vw;
+  }
+  .Link{
+    font-size: 2vh;
+  }
+}
+@media screen and (max-width:600px){
+.Links{
+  width: 50vw;
+  justify-content: space-evenly;
+}
+
+  .logo-img{
+    height: 50px;
+  }
+  .Link{
+    height: 5vh;width: 13vw;
+  }
+  .img-gallery{
+    height: 150px ;
+    width: 200px;
+  }
+}
